@@ -73,7 +73,7 @@
 					<button type="submit" onclick="disply()" value="submit" class="btn btn-submit">PRIVATE</button>
 					<button type="submit" onclick="dsply()" value="submit" class="btn btn-submit">PUBLIC</button>
 					<BR />
-					<button type="sub" onclick="dspl()" value="submit" class="btn btn-sub">B1<br> Loc: P. Baptist<br>
+					<button type="sub" onclick="dspl()" style ="background-color:darkgoldenrod;"value="submit" class="btn btn-sub">B1<br> Loc: P. Baptist<br>
 						Private spot<br> 200/= per hour<br><br> Available</button>
 					<button type="sub" onclick="dspl()" value="submit" class="btn btn-sub">B10 <br>Loc: P. Baptist<br>
 						Public spot<br> 200/= per day<br> <br>Available</button>
@@ -120,7 +120,7 @@
 	<div class="container-fluid">
 		<div class="row title text-center">
 		<button type="submit"class="btn btn-sub ">HOME</button>
-		<button type="submit" class="btn btn-sub">CHECK OUT</button>
+		<button type="submit" onclick="bill()"class="btn btn-sub"style = "background-color :red">CHECK OUT</button>
 	</div>
 	  </div>
 	<section id="contact_us" class="section">
@@ -163,6 +163,12 @@
 		function dspl()  {
     
 			window.alert('Please Enter your Car Reg.No.');
+			document.getElementById("form").submit();
+		}
+
+		function bill()  {
+
+			window.prompt('Your Bill is Ksh.200. Kindly pay cash or Enter your number to pay via MPESA');
 			document.getElementById("form").submit();
 		
 }
