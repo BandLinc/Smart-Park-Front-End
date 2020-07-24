@@ -19,3 +19,7 @@
 .parking-spots .card  button.btn:hover{
     background-color: red;
 }
+
+.parking-spots .card.bg-warning{
+    background-color: yellow;
+}
