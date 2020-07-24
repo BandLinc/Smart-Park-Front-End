@@ -276,7 +276,7 @@ section {
 
 .section {
 	padding: 20px 0;
-	background: url('../img/car2.jpg');
+	background: url('../img/car4.jpg');
 }
 
 .section-padded {
@@ -548,7 +548,7 @@ section {
 /* Pricing */
 
 #pricing {
-	background: #00a8ff url('../img/car1.jpg') no-repeat center center;
+	background: #00a8ff url('../img/car5.jpg') no-repeat center center;
 	-webkit-background-size: cover;
 	background-size: cover;
 	-webkit-transition: background-image 0.6s linear 0.3s;
