@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home: Smart Park</title>
-	<meta name="description" content="Cardio is a free one page template made exclusively for Codrops by Luka Cvetinovic" />
+	<meta name="description"
+		content="Cardio is a free one page template made exclusively for Codrops by Luka Cvetinovic" />
 	<meta name="keywords" content="html template, css, free, one page, gym, fitness, web design" />
 	<meta name="author" content="Luka Cvetinovic for Codrops" />
 	<!-- Favicons (created with http://realfavicongenerator.net/)-->
@@ -23,8 +24,6 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!-- Owl -->
-	<link rel="stylesheet" type="text/css" href="css/owl.css">
 	<!-- Animate.css -->
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<!-- Font Awesome -->
@@ -33,138 +32,116 @@
 	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
 	<!-- Main style -->
 	<link rel="stylesheet" type="text/css" href="css/cardio.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-	<div class="preloader">
-		<img src="img/car.jpg" alt="Preloader image">
-	</div>
-	<nav class="navbar">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
 
+
+	<div>
+
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+					data-toggle="tab">Home</a></li>
+			<li role="presentation"><a href="#checkout" aria-controls="checkout" role="tab"
+					data-toggle="tab">Checkout</a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="home">
+
+				<section id="contact_us" class="section">
+					<div class="container">
+						<div class="row title text-center">
+							<h2 class="margin-top white">SMART PARK</h2>
+						</div>
+						<div class="row">
+
+
+							<div class="modal-content modal-popup">
+								<button type="submit" onclick="display()" value="submit" class="btn btn-submit">PRIVATE</button>
+								<button type="submit" onclick="display()" value="submit" class="btn btn-submit">PUBLIC</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+
+
+				<section class="parking-spots">
+
+					<div class="container">
+
+		
+						<div id="display-spots" class="row">
+
+							<span>Loading ...</span>
+
+
+							<!-- <div class="col-sm-4 ">
+
+								<div class="card bg-info">
+									<h1>B1</h1>
+									<p>Loc: PB</p>
+									<p>Public Spot</p>
+									<p><strong>200/=</strong> Per day</p>
+									<p>Available</p>
+									<button class="btn btn-danger btn-sm">SELECT</button>
+								</div>
+
+							</div> -->
+
+							
+						</div>
+					</div>
+
+				</section>
+
+
+				<!-- ./ END HOME -->
 			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
-
-	<section id="contact_us" class="section">
-		<div class="container">
-			<div class="row title text-center">
-				<h2 class="margin-top white">SMART PARK</h2>
-			</div>
-			<div class="row">
-
-				<div class="modal-content modal-popup">
-					<button type="submit" onclick="display()" value="submit" class="btn btn-submit">PRIVATE</button>
-					<button type="submit" onclick="display()" value="submit" class="btn btn-submit">PUBLIC</button>
-<BR/>
-					<button type="sub" onclick="display()" value="submit" class="btn btn-sub">B1 Loc: P. Baptist Public spot 200/=  Available</button>
-					<button type="sub" onclick="display()" value="submit" class="btn btn-sub">B1 Loc: P. Baptist Public spot 200/= Available</button>
-
-				</div>
-		</div>
-		</div>
-	</section>
-
-	<section id="pricing" class="section">
-		<div class="row title text-center">
-			<h2 class="margin-top blue">SMART PARK</h2>
-		</div>
-		<div class="container">
-			<div class="modal-content modal-popup">
-				<form action="" class="popup-form">
-					<input type="text" class="form-control form-blue" id="fullName" placeholder="ENTER REG NO#">
-					<br/>
-						<h4 class="light white">B10 </h4>
-					<br/>
-					<h4 class="light white">LOC P BAPTIST </h4>
-					<br/>
-					<h4 class="light white">PRIVATE SPOT </h4>
-					<br/>
-					<h4 class="light white">200 per hour </h4>
-					<br/>
-					<button type="submit" onclick="display()" value="submit" class="btn btn-sub">CHECKIN</button>
-					<button type="submit" onclick="display()" value="submit" class="btn btn-sub">HOME</button>
-				</form>
-			</div>
-		</div>
-	</section>
-
-	<section id="contact_us" class="section">
-		<div class="row title text-center">
-			<h2 class="margin-top white">SMART PARK</h2>
-		</div>
-		<div class="container">
-
-			<div class="modal-content modal-popup">
-				<form action="" class="popup-form">
-					<input type="text" class="form-control form-white" id="fullName" placeholder="ENTER REG NO#">
-					<br/>
-					<br/>
-					<button type="submit" onclick="display()" value="submit" class="btn btn-submit">CHECKOUT</button>
-					<button type="submit" onclick="display()" value="submit" class="btn btn-submit">HOME</button>
-				</form>
-			</div>
-		</div>
-	</section>
-
-	<section class="section section-padded blue-bg">
-		<div class="row title text-center">
-			<h2 class="margin-top white">SMART PARK</h2>
-			<h3 class=" white">PAYMENT</h3>
-		</div>
-		<div class="container">
-			<div class="modal-content modal-popup">
-				<form action="" class="popup-form">
-					<label class="white">Time Spent:</label><BR/>
-				<label class=" white">Amount:</label>
-				    <br/>
-					<br/>
-					
-				</form>
-				<button type="submit" onclick="display()" value="submit" class="btn btn-sub">LIPA NA MPESA</button>
-					<button type="submit" onclick="display()" value="submit" class="btn btn-sub">HOME</button>
-					
+			<div role="tabpanel" class="tab-pane" id="checkout">
 				
-			</div>
 
+				<section class="section section-padded blue-bg">
+					<div class="row title text-center">
+						<h2 class="margin-top white">SMART PARK</h2>
+						<h3 class=" white">PAYMENT</h3>
+					</div>
+					<div class="container">
+						<div class="modal-content modal-popup">
+							<form action="" class="popup-form">
+								<label class="white">Time Spent:</label><BR/>
+							<label class=" white">Amount:</label>
+								<br/>
+								<br/>
+								
+							</form>
+							<button type="submit" onclick="display()" value="submit" class="btn btn-sub">LIPA NA MPESA</button>
+								<button type="submit" onclick="display()" value="submit" class="btn btn-sub">HOME</button>
+								
+							
+						</div>
+			
+					</div>
+			
+				</section>
+
+				<!-- ./ END CHECKOUT -->
+			</div>
 		</div>
 
-	</section>
+	</div>
 
-<script type="text/JavaScript">
-       var fName; //first name
-         function getFirstName() {
-            return document.getElementById("fullName").value;
-        }
 
-        function display()  {
-            fName = getFirstName();
-            window.alert(fName + "We have received a Message from you. Thank you for contacting us");
-            document.getElementById("form").submit();
-
-        }
-    </script>
 	<!-- Scripts -->
 	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<!--<script src="js/wow.min.js"></script>
-	<script src="js/typewriter.js"></script>-->
-	<script src="js/jquery.onepagenav.js"></script>
-	<script src="js/typewriter.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/app.scripts.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,25 @@
+.parking-spots .card{
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 3px 2px rgba(0,0,0,0.1);
+}
+
+.parking-spots .card h1{
+    font-size: 10em;
+}
+
+.parking-spots .card p{
+    color: black;
+}
+
+.parking-spots .card  button.btn{
+    background-color: #0008ff;
+    padding: 3px 6px;
+}
+.parking-spots .card  button.btn:hover{
+    background-color: red;
+}
+
+.parking-spots .card.bg-warning{
+    background-color: yellow;
+}
